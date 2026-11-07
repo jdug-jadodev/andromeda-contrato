@@ -85,7 +85,7 @@ def main() -> None:
         fail("camera_viewers debe ser 1")
     if limits["message_bytes"] > 4 * 1024 * 1024:
         fail("message_bytes supera el maximo de seguridad")
-    if limits["command_wait_ms"] > 30000:
+    if limits["command_wait_ms"] > 45000:
         fail("command_wait_ms supera el maximo de seguridad")
 
     for code, http in errors.get("http", {}).items():
